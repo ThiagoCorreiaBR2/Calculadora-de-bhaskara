@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Baskara from './src/baskara';
 
+
+//aqui se coloca a ordem que os compontentes vao ser apresentados na tela
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Baskara />
       <StatusBar style="auto" />
     </View>
   );
@@ -12,6 +15,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
